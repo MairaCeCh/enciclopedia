@@ -4,6 +4,7 @@ body{
     width: 100vw;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
 .contenedor-header{
     width: 100%;
@@ -56,6 +57,7 @@ body{
     margin-top: 5px;
     margin-right: 20px;
     color: #E5E5CB;
+    font-family: 'EB Garamond', serif;
 
 }
 .tooltips-box{
@@ -86,6 +88,7 @@ body{
 }
 
 
+
 .contenedor-enciclopedia{
     margin: 0 auto;
     width: 90%;
@@ -98,7 +101,7 @@ body{
 }
 .info{
     width: 250px;
-    height: 500px;
+    height: 550px;
     background: #D5CEA3;
     border: solid 1px black;
     margin: 5px;
@@ -128,4 +131,9 @@ body{
 }
 .ventana h1{
     margin: 0 auto;
+}
+.img-ejemplo{
+    height: 100px;
+    width: 100px;
+    float: right;
 }
