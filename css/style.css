@@ -23,6 +23,12 @@ body{
   'opsz' 48,
   
 }
+.btn-ejem{
+    width: 65px; 
+    height: 25px;
+    cursor: pointer;
+    background-color: gold;
+}
 .lupa{
     font-size: 40px;
     margin-right: 15px;
