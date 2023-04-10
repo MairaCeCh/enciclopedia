@@ -23,6 +23,22 @@ body{
   'opsz' 48,
   
 }
+.p-img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1PAekN78sWnRYg_4A0BflJ4zH0eKkD_oVw-Dc4h7F&s");
+}
+.fondo{
+    background: gold;
+}
+.border{
+    border-top: dotted 1px gold;
+    border-right: solid 1px gold;
+    border-bottom: groove 1px gold;
+    border-left: dashed 1px gold;
+    
+}
+.b-r{
+    border-radius: 50%;
+}
 .btn-ejem{
     width: 65px; 
     height: 25px;
