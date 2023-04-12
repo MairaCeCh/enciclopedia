@@ -23,6 +23,16 @@ body{
   'opsz' 48,
   
 }
+.g-f{
+    color: white;
+    background-color: azure;
+}
+.font-size{
+    font-size: 20px;
+}
+.text-shadow{
+    text-shadow: 2px 2px 4px gold
+}
 .p-img{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1PAekN78sWnRYg_4A0BflJ4zH0eKkD_oVw-Dc4h7F&s");
 }
@@ -39,6 +49,11 @@ body{
 .b-r{
     border-radius: 50%;
 }
+.outline{
+    outline: dotted 2px gold;
+
+}
+
 .btn-ejem{
     width: 65px; 
     height: 25px;
@@ -62,7 +77,11 @@ body{
     height: 100%;
     display: inline-block;
     margin-left: 15px;
+    
 } 
+.text-decoration{
+    text-decoration: underline gold double 2px
+}
 .tooltips{
     font-weight: normal;
     text-decoration: none;
