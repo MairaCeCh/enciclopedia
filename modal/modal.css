@@ -1,0 +1,9 @@
+#modal::backdrop{
+    background: rgba(0,0,0,.55);
+
+}
+
+#modal{
+    max-height: 50ch;
+    border: solid black 2px;
+}
