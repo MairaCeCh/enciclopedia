@@ -1,12 +1,18 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
 body{
     background: #3C2A21;
     height: 100vh;
     width: 100vw;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Ysabeau', sans-serif;
     background: url(https://images.unsplash.com/photo-1524402822060-94f4fb30f6ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZW5jaWNsb3BlZGlhfGVufDB8fDB8fA%3D%3D&w=1000&q=80) no-repeat center fixed;
     background-size: cover;
+    
 }
 .contenedor-header{
     width: 100%;
@@ -195,3 +201,14 @@ body{
     width: 100px;
     float: right;
 }
+.footer{
+    background: #603601;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
