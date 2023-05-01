@@ -1,23 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="contenedor-nav">
-      <nav>
-        <img
-          class="logo"
-          src="https://cdn-icons-png.flaticon.com/512/823/823431.png"
-          alt="logo"
-        />
-        <h1>enciclopedia</h1>
-        <h1>Mayra biens sapo</h1>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ysabeau:wght@1;300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="contenedor-header">
+
+
+    <div class="titulo">
+      <h1 class="titulo">Enciclopedia</h1>
+      
+      <h2>ramaEMA</h2>
+      
+
     </div>
-  </body>
+    <div><span class="material-symbols-outlined lupa">
+        search
+      </span>
+    </div>
+  </header>
+
+
+  <div class="contenedor-enciclopedia">
+    <div class="gran-contenenedor">
+      <div class="ventana">
+        <h1>html</h1>
+      </div>
+      <div class="info">
+        <a class="lista" Target="blank" href="https://www.w3schools.com/tags/default.asp">Lista de etiquetas de HTML</a>
+
+        <button id="btn-abrir-modal" class="tooltips"> !DOCTYPE html <dialog id="modal"> declaración define que este
+            documento es un documento HTML5 <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog>
+        </button>
+
+        <button id="btn-abrir-modalA" class="tooltips">h1/h2/h3/h4/h5/h6 <dialog id="modalA"> Los encabezados HTML son
+            títulos o subtítulos que desea mostrar en una página web.El h1 seria el titulo principal( mas grande) y el
+            h6 el mas chico <a href="" id="btn-cerrar-modalA" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modalB" class="tooltips">p <dialog id="modal">El elemento HTML "p" define un párrafo.Un
+            párrafo siempre comienza en una nueva línea y los navegadores agregan automáticamente un espacio en blanco
+            (un margen) antes y después de un párrafo. <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a>
+          </dialog></button>
+
+        <button id="btn-abrir-modalC" class="tooltips">br<dialog id="modal" class=""> Úselo "br" si desea un salto de
+            línea (una nueva línea) sin comenzar un nuevo párrafo. Es una etiqueta vacía, lo que significa que no tiene
+            una etiqueta final. <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modalD" class="tooltips">hr<dialog id="modal" class=" "> Se muestra como una regla
+            horizontal (crea una linea). El "hr" es un elemento que se usa para separar el contenido en una página HTML:
+            <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a>
+          </dialog></button>
+
+        <button id="btn-abrir-modalE" class="tooltips">b<dialog id="modal" class=" "> La etiqueta "b" especifica texto
+            en negrita sin ninguna importancia adicional. <b>ejemplo</b> <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modalF" class="tooltips">del<dialog id="modal" class=" "> Para definir el texto eliminado
+            <del>ejemplo</del> <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a>
+          </dialog></button>
+
+        <button id="btn-abrir-modalG" class="tooltips">i<dialog id="modal" class=" ">La etiqueta define una parte del
+            texto en una voz o estado de ánimo alternativo. El contenido interior normalmente se muestra en cursiva .La
+            "i" etiqueta se usa a menudo para indicar un término técnico, una frase de otro idioma, un pensamiento, el
+            nombre de un barco, etc. <i>ejemplo</i> <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog>
+        </button>
+
+        <button id="btn-abrir-modalH" class="tooltips">mark<dialog id="modal" class=" "> La etiqueta "mark" define el
+            texto que debe marcarse o resaltarse. <mark> ejemplo</mark> <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modalI" class="tooltips">small<dialog id="modal" class=" "> La etiqueta "small" define
+            texto más pequeño (como derechos de autor y otros comentarios secundarios). Sugerencia: esta etiqueta no
+            está obsoleta, pero es posible lograr un mejor efecto con CSS. <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modalJ" class="tooltips">u<dialog id="modal" class=" "> Crea un texto subrayado,
+            Sugerencia: ¡Evite usar el "u" donde podría confundirse con un hipervínculo! <u>ejemplo</u> <a href=""
+              id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modalK" class="tooltips">sub<dialog id="modal" class=" "> El texto del subíndice aparece
+            medio carácter por debajo de la línea normal y, a veces, se representa en una fuente más pequeña. El texto
+            de subíndice se puede utilizar para fórmulas químicas, como H <sub>2</sub> O. <sub> ejemplo </sub> <a
+              href="" id="btn-cerrar-modal" class="cerrar">cerrar</a></dialog></button>
+
+        <button id="btn-abrir-modalM" class="tooltips">sup<dialog id="modal" class=" "> El texto en superíndice aparece
+            medio carácter por encima de la línea normal y, a veces, se representa en una fuente más pequeña. El texto
+            en superíndice se puede utilizar para notas al pie, como WWW <subutton>[1]</subutton>como por <subutton>
+              ejemplo</subutton> . <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modalL" class="tooltips">a<dialog id="modal" class=" "> La etiqueta "a" define un
+            hipervínculo, que se utiliza para enlazar de una página a otra. El atributo más importante del elemento es
+            el href atributo, que indica el destino del enlace. "a" href="https://www.w3schools.com">Visit
+            W3Schools.com! "/a" <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">terget-self/blank/parent/top<dialog id="modal" class=" "> El
+            "target" atributo especifica dónde abrir el documento vinculado....El "blank" Abre el documento vinculado en
+            una nueva ventana o pestaña...el "parent" Abre el documento vinculado en el marco principal...El "top" Abre
+            el documento vinculado en el cuerpo completo de la ventana" <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a></dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">id<dialog id="modal" class=" "> El atributo HTML idse usa para
+            especificar una identificación única para un elemento HTML. No puede tener más de un elemento con la misma
+            identificación en un documento HTML. <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a></dialog>
+        </button>
+
+        <button id="btn-abrir-modal" class="tooltips">img<dialog id="modal" class=" "> La etiqueta "img" se utiliza para
+            incrustar una imagen en una página HTML.Técnicamente, las imágenes no se insertan en una página web; las
+            imágenes están vinculadas a páginas web. <img class="img-ejemplo"
+              src="images/etiquetas-y-atributos-hmtl-3.webp" alt="">La etiqueta "img" tiene dos atributos obligatorios:
+            <u>src:</u> especifica la ruta a la imagen <u>alt:</u> especifica un texto alternativo para la imagen, si la
+            imagen por algún motivo no se puede mostrar <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a>
+          </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">ul<dialog id="modal" class=" "> La etiqueta "ul" define una lista
+            desordenada (con viñetas). Use la etiqueta "ul" junto con la etiqueta "li" para crear listas desordenadas.
+            <br> °ejemblo <br> °ejemblo <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a>
+          </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">ol<dialog id="modal" class=" "> La etiqueta "ol" define una lista
+            ordenada. Una lista ordenada puede ser numérica o alfabética. La etiqueta "li" se utiliza para definir cada
+            elemento de la lista. <br> 1 ejemplo <br> 2 ejemplo <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">li<dialog id="modal" class=" "> La etiqueta "li" define un
+            elemento de la lista. Se usa dentro de listas ordenadas "ol", listas desordenadas "ul" <a href=""
+              id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">dl<dialog id="modal" class=" "> La etiqueta "dl" define una lista
+            de descripción. Se usa junto con "dt" (define términos/nombres) y "dd" (describe cada término/nombre). <a
+              href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">dt<dialog id="modal" class=" "> Etiqueta define un término/nombre
+            en una lista de descripción. <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">dd<dialog id="modal" class=" ">La etiqueta "dd" se utiliza para
+            describir un término/nombre en una lista de descripción. <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">div<dialog id="modal" class=" "> La etiqueta "div" define una
+            división o una sección en un documento HTML. Se utiliza como contenedor de elementos HTML, que luego se
+            diseñan con CSS o se manipulan con JavaScript. Se diseña fácilmente usando el atributo class o id. ¡Se puede
+            poner cualquier tipo de contenido dentro de la etiqueta! <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">script<dialog id="modal" class=" "> La etiqueta "script" se
+            utiliza para incrustar JavaScript. Contiene declaraciones de secuencias de comandos o apunta a un archivo de
+            secuencia de comandos externo a través del atributo src.Los usos comunes de JavaScript son la manipulación
+            de imágenes, la validación de formularios y los cambios dinámicos de contenido. Esta etiqueta se debe
+            colocar por arriba de la etiqueta de cierre de "body" <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">head<dialog id="modal" class=" "> El
+
+            <head>elemento HTML es un contenedor para los siguientes elementos: <u>"title"</u> , <u>"style"</u> ,
+              <u>"meta"</u> , <u>"link"</u> y <u>"base"</u> <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a>
+          </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">meta<dialog id="modal" class=" "> Etiqueta define metadatos sobre
+            un documento HTML. Los metadatos son datos (información) sobre datos. "meta" normalmente se utilizan para
+            especificar el juego de caracteres, la descripción de la página, las palabras clave, el autor del documento
+            y la configuración de la ventana gráfica. <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a>
+          </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">form<dialog id="modal" class=" "> Etiqueta para poder crear un
+            formulario <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">input<dialog id="modal" class=" "> La etiqueta "input" especifica
+            un campo de entrada donde el usuario puede ingresar datos.El elemento se puede mostrar de varias formas,
+            según el atributo de tipo. Algunos tipos de entrada son:
+            button,checkbox,color,date,datetime-local,email,hidden,number,password,radio,range,submit,tel,text,time <a
+              href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">textarea<dialog id="modal" class=" ">Es una etiqueta que define un
+            control de entrada de texto de varias líneas <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a>
+          </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">button<dialog id="modal" class=" "> La etiqueta define un botón en
+            el que se puede hacer clic <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a> </dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">value<dialog id="modal" class=" ">Es el valor de un elemento
+            input, para JS es muy util <a href="" id="btn-cerrar-modal" class="cerrar">cerrar</a></dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">canvas<dialog id="modal" class=" "> El elemento HTML se utiliza
+            para dibujar gráficos, sobre la marcha, a través de JavaScript. Canvas tiene varios métodos para dibujar
+            rutas, cuadros, círculos, texto y agregar imágenes. <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a></dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">video<dialog id="modal" class=" "> elemento HTML se utiliza para
+            mostrar un video en una página web. Se debe colocar el atributo "controls" <a href="" id="btn-cerrar-modal"
+              class="cerrar">cerrar</a></dialog></button>
+
+        <button id="btn-abrir-modal" class="tooltips">audio<dialog id="modal" class=" "> elemento HTML se utiliza para
+            reproducir un archivo de audio en una página web. Se debe colocar el atributo "controls" <a href=""
+              id="btn-cerrar-modal" class="cerrar">cerrar</a></dialog></button>
+
+
+      </div>
+    </div>
+
+    <div class="gran-contenenedor">
+      <div class="ventana">
+        <h1>css</h1>
+      </div>
+      <div class="info">
+        <a class="lista" Target="blank" href="https://www.w3schools.com/css/default.asp">Donde aprender css</a>
+
+        <button class="tooltips">Como agregar CSS<dialog class=" "> Hay tres formas de insertar una hoja de estilo: CSS
+            externo, CSS interno, CSS en línea </dialog></button>
+
+        <button class="tooltips">Selectores<dialog class=" "> Los selectores de CSS se utilizan para "encontrar".Se
+            pueden dividir en cinco categorías: <br>1 Selectores simples, <br> 2 Selectores combinadores,<br>3
+            Selectores de pseudoclase,<br> 4 Selectores de pseudoelementos <br> 5 Selectores de atributos </dialog>
+        </button>
+
+        <button class="tooltips">comentarios<dialog class=" "> Los comentarios se utilizan para explicar el código y
+            pueden ayudar cuando edite el código fuente en una fecha posterior. Los navegadores ignoran los
+            comentarios.Un comentario CSS se coloca dentro del elemento y comienza /*y termina con */: </dialog>
+        </button>
+
+        <button class="tooltips">color<dialog class=" "> Los colores se especifican utilizando nombres de color
+            predefinidos o valores RGB, HEX, RGBA, HSLA. </dialog></button>
+
+        <button class="tooltips">RGB<dialog class=" "> Un valor de color RGB representa las fuentes de luz ROJA, VERDE y
+            AZUL. rgb ( rojo, verde , azul ) </dialog></button>
+
+        <button class="tooltips">RGBA<dialog class=" "> Los valores de color RGBA son una extensión de los valores de
+            color RGB con un canal alfa, que especifica la opacidad de un color.rgba ( rojo, verde , azul, alfa )
+          </dialog></button>
+
+        <button class="tooltips">HEX<dialog class=" "> Un color hexadecimal se especifica con: #RRGGBB, donde los
+            enteros hexadecimales RR (rojo), GG (verde) y BB (azul) </dialog></button>
+
+        <button class="tooltips">background<dialog class=" "> Las propiedades de fondo de CSS se utilizan para agregar
+            efectos de fondo a los elementos </dialog></button>
+
+        <button class="tooltips">opacity<dialog class=" "> La propiedad especifica la opacidad/transparencia de un
+            elemento. Puede tomar un valor de 0.0 - 1.0. Cuanto menor sea el valor, más transparente </dialog></button>
+
+        <button class="tooltips">background-image<dialog class="  "> La background-image es una propiedad especifica una
+            imagen para usar como fondo de un elemento. <b class="p-img">ejemplo</b> </dialog></button>
+
+        <button class="tooltips">background-repeat<dialog class=" "> La propiedad también especifica mostrar la imagen
+            de fondo solo una vez, sin esta propiedad la img se repite </dialog></button>
+
+        <button class="tooltips">border<dialog class=" "> Las propiedades de borde de CSS le permiten especificar el
+            estilo, el ancho y el color del borde de un elemento.
+            dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden. <b class="border">ejemplo</b>
+          </dialog> </button>
+
+        <button class="tooltips">border-radius<dialog class=" "> La propiedad se usa para agregar bordes redondeados a
+            un elemento <button class="b-r">ejemplo</button> </dialog></button>
+
+        <button class="tooltips">margin<dialog class=" "> La propieda CSS se utilizan para crear espacio alrededor de
+            los elementos, fuera de los bordes definidos. Con CSS, tienes control total sobre los márgenes. Hay
+            propiedades para establecer el margen de cada lado de un elemento (top, right, left y bottom). </dialog>
+        </button>
+
+        <button class="tooltips">padding<dialog class=" "> El relleno se utiliza para crear espacio alrededor del
+            contenido de un elemento, dentro de los bordes definidos. Hay propiedades para establecer el padding de cada
+            lado de un elemento (top, right, left y bottom) </dialog></button>
+
+        <button class="tooltips">box-sizing<dialog class=" "> Sirve para que el elemento mantenga su ancho real; si
+            aumenta el relleno, el espacio de contenido disponible disminuirá </dialog></button>
+
+        <button class="tooltips">height y width<dialog class=" "> Las propiedades se utilizan para establecer la altura
+            (height) y el ancho (width) de un elemento. </dialog></button>
+
+        <button class="tooltips">Box Model<dialog class=" "> Es esencialmente una caja que envuelve cada elemento HTML.
+            Consiste en: márgenes, bordes, relleno y el contenido real </dialog></button>
+
+        <button class="tooltips"> outline<dialog class=" "> Es una línea dibujada fuera del borde del elemento para que
+            "resalte". Tiene las siguientes propiedades de contorno: outline-style, outline-color, outline-width,
+            outline-offset, outline <b class="outline">ejemplo</b> </dialog></button>
+
+        <button class="tooltips">text-align<dialog class=" "> se utiliza para establecer la alineación horizontal de un
+            texto. Un texto puede estar alineado a la izquierda o a la derecha, centrado o justificado </dialog>
+        </button>
+
+        <button class="tooltips"> vertical-align <dialog class=" ">La propiedad establece la alineación vertical de un
+            elemento, estas pueden ser baseline, text-top, text-bottom, sub y super </dialog></button>
+
+        <button class="tooltips">text-decoration<dialog class=" "> Tiene varias propiedades: line (agrega linea al
+            texto), color(da color a la linea del texto), style(agrega el estilo de la linea), thickness(es el grosor de
+            ella) <b class="text-decoration">ejemplo</b> </dialog></button>
+
+        <button class="tooltips">text-transform<dialog class=" "> Sus propiedades son uppercase, lowercase y capitalize
+          </dialog></button>
+
+        <button class="tooltips">text-shadow<dialog class=" "> Agrega sombra al texto <b class="text-shadow">ejemplo</b>
+          </dialog></button>
+
+        <button class="tooltips">font-size<dialog class=" ">Establece el tamaño del texto <b
+              class="font-size">ejemplo</b> </dialog></button>
+
+        <button class="tooltips">fuentes<dialog class=" "> <a class="g-f" href="https://fonts.google.com/">google
+              fonts</a> </dialog></button>
+
+        <button class="tooltips">enlaces<dialog class=" "> Además, los enlaces pueden tener un estilo diferente según el
+            estado en el que se encuentren,Los cuatro estados de enlace son: link, visited, hover y active </dialog>
+        </button>
+
+        <button class="tooltips">list-style-type<dialog class=" ">propiedad especifica el tipo de marcador de elemento
+            de lista que son: circle, square, upper-roman y lower-alpha </dialog></button>
+
+        <button class="tooltips">display<dialog class=" "> Cada elemento HTML tiene un valor de visualización
+            predeterminado según el tipo de elemento que sea. El valor de visualización predeterminado para la mayoría
+            de los elementos es block o inline. </dialog></button>
+
+        <button class="tooltips">display block<dialog class=" "> Comienza en una nueva línea y ocupa todo el ancho
+            disponible (se extiende hacia la izquierda y hacia la derecha tanto como sea posible). </dialog></button>
+
+        <button class="tooltips">display inline<dialog class=" "> Un elemento en línea no comienza en una nueva línea y
+            solo ocupa el ancho necesario </dialog></button>
+
+        <button class="tooltips">display none<dialog class=" "> se usa comúnmente con JavaScript para ocultar y mostrar
+            elementos sin eliminarlos ni volver a crearlos </dialog></button>
+
+        <button class="tooltips">visibility:hidden<dialog class=" "> El elemento seguirá ocupando el mismo espacio que
+            antes. El elemento estará oculto </dialog></button>
+
+        <button class="tooltips">position<dialog class=" "> La propiedad position especifica el tipo de método de
+            posicionamiento utilizado para un elemento. Pueden ser static, relative, fixed, absolute y sticky </dialog>
+        </button>
+
+        <button class="tooltips">static<dialog class=" ">Los elementos posicionados static no se ven afectados por las
+            propiedades superior, inferior, izquierda y derecha. está posicionado de ninguna manera especial; siempre se
+            posiciona de acuerdo con el flujo normal de la página</dialog></button>
+
+        <button class="tooltips">relative<dialog class=" ">Establecer las propiedades superior, derecha, inferior e
+            izquierda de un elemento relativamente posicionado hará que se ajuste fuera de su posición normal. El resto
+            del contenido no se ajustará para encajar en ningún espacio dejado por el elemento. </dialog></button>
+
+        <button class="tooltips">fixed<dialog class=" "> Un elemento con posición: fixed; se coloca en relación con la
+            ventana gráfica, lo que significa que siempre permanece en el mismo lugar, incluso si se desplaza la página.
+            Las propiedades superior, derecha, inferior e izquierda se utilizan para colocar el elemento. </dialog>
+        </button>
+
+        <button class="tooltips">absolute<dialog class=" "> Un elemento con posición: absolute; se coloca en relación
+            con el ancestro posicionado más cercano. normalmente se usa dentro de un elemento con posicion relativa
+          </dialog></button>
+
+        <button class="tooltips">sticky<dialog class=" ">
+            Un elemento con posición: adhesivo; se posiciona en función de la posición de desplazamiento del usuario. Un
+            elemento fijo alterna entre relativo y fijo, dependiendo de la posición de desplazamiento. Se coloca en
+            relación hasta que se alcanza una posición de desplazamiento determinada en la ventana gráfica; luego, se
+            "pega" en su lugar (como posición: fija). </dialog></button>
+
+        <button class="tooltips">z-index<dialog class=" ">La z-indexpropiedad especifica el orden de apilamiento de un
+            elemento (qué elemento debe colocarse delante o detrás de los demás).</dialog></button>
+
+        <button class="tooltips">overflow<dialog class=" ">La overflowpropiedad especifica si recortar el contenido o
+            agregar barras de desplazamiento cuando el contenido de un elemento es demasiado grande para caber en el
+            área especificada. pueden ser visible, hidden, scroll y auto</dialog></button>
+
+        <button class="tooltips">float<dialog class=" ">La propiedad de CSS float especifica cómo debe flotar un
+            elemento. Sus propiedades pueden ser left, right, none y inherit </dialog></button>
+
+        <button class="tooltips">clear<dialog class=" ">Cuando usamos la floatpropiedad, y queremos el siguiente
+            elemento debajo (no a la derecha ni a la izquierda), tendremos que usar la clear propiedad. La
+            clearpropiedad especifica lo que debería suceder con el elemento que está al lado de un elemento flotante.
+            Sus propiedades pueden ser none, left, right, both e inherit</dialog></button>
+
+        <button class="tooltips">inline-block<dialog class=" ">permite establecer un ancho y alto en el elemento. no
+            agrega un salto de línea después del elemento, por lo que el elemento puede ubicarse junto a otros elementos
+          </dialog></button>
+
+        <button class="tooltips">Pseudo-clases<dialog class=" ">Una pseudoclase se usa para definir un estado especial
+            de un elemento. Por ejemplo, se puede utilizar para: Aplicar estilo a un elemento cuando un usuario pasa el
+            mouse sobre él.Estilo de enlaces visitados y no visitados de manera diferente,Dale estilo a un elemento
+            cuando se enfoca. Estas son link, visited, hover y active </dialog></button>
+
+        <button class="tooltips">opacity<dialog class=" ">La propiedad puede tomar un valor de 0.0 - 1.0. Cuanto menor
+            sea el valor, más transparente </dialog></button>
+
+        <button class="tooltips">border-right<dialog class=" ">Agregar al css de los "li" para crear divisores entre
+            ellos </dialog></button>
+
+        <button class="tooltips">longitudes absolutas<dialog class=" ">Las unidades de longitud absoluta son fijas y una
+            longitud expresada en cualquiera de ellas aparecerá exactamente como ese tamaño.Se pueden usar cm, mm, in,
+            px, pt,pc</dialog></button>
+
+        <button class="tooltips">longitudes relativas<dialog class=" "> Las unidades de longitud relativa especifican
+            una longitud relativa a otra propiedad de longitud. Las unidades de longitud relativa escalan mejor entre
+            diferentes medios de representación. Son em, ex, ch, rem, vw, vh, vmin, vmax y %</dialog></button>
+
+        <button class="tooltips">!important<dialog class=" ">La !importantregla en CSS se usa para agregar más
+            importancia a una propiedad/valor de lo normal.
+
+            De hecho, si usa la !importantregla, anulará TODAS las reglas de estilo anteriores para esa propiedad
+            específica en ese elemento.</dialog></button>
+
+        <button class="tooltips">calc()<dialog class=" "> La calc()función realiza un cálculo para ser utilizado como el
+            valor de la propiedad. ejemplo " width: calc(100% - 100px);" </dialog></button>
+
+        <button class="tooltips">max()<dialog class=" "> La max()función utiliza el valor más grande, de una lista de
+            valores separados por comas, como valor de propiedad. ejemplo "width: max(50%, 300px);"</dialog></button>
+
+        <button class="tooltips">min()<dialog class=" ">La min()función utiliza el valor más pequeño, de una lista de
+            valores separados por comas, como valor de propiedad. ejemplo"width: min(50%, 300px);"</dialog></button>
+
+        <button class="tooltips">border-image<dialog class=" ">Con la border-imagepropiedad CSS, puede configurar una
+            imagen para que se use como borde alrededor de un elemento. <b class="border-img">ejemplo</b> </dialog>
+        </button>
+
+        <button class="tooltips">background-size<dialog class=" ">La propiedad CSS background-sizele permite especificar
+            el tamaño de las imágenes de fondo. El tamaño se puede especificar en longitudes, porcentajes o usando una
+            de las dos palabras clave: contener o cubrir.</dialog></button>
+
+        <button class="tooltips">contain<dialog class=" ">La containpalabra clave escala la imagen de fondo para que sea
+            lo más grande posible (pero tanto su ancho como su alto deben caber dentro del área de contenido). Como tal,
+            dependiendo de las proporciones de la imagen de fondo y el área de posicionamiento del fondo, puede haber
+            algunas áreas del fondo que no estén cubiertas por la imagen de fondo.
+
+          </dialog></button>
+
+        <button class="tooltips">cover<dialog class=" ">La coverpalabra clave escala la imagen de fondo para que el área
+            de contenido quede completamente cubierta por la imagen de fondo (tanto su ancho como su alto son iguales o
+            superan el área de contenido). Como tal, algunas partes de la imagen de fondo pueden no ser visibles en el
+            área de posicionamiento del fondo.</dialog></button>
+
+        <button class="tooltips">transparent<dialog class=" ">se utiliza para hacer que un color sea transparente. Esto
+            se usa a menudo para hacer un color de fondo transparente para un elemento.</dialog></button>
+
+        <button class="tooltips">gradient<dialog class=" ">le permiten mostrar transiciones suaves entre dos o más
+            colores específicos.Gradientes lineales (baja/arriba/izquierda/derecha/diagonalmente), Gradientes radiales
+            (definidos por su centro), Gradientes cónicos (girados alrededor de un punto central)</dialog></button>
+
+        <button class="tooltips">box-shadow<dialog class=" ">Esta propiedad CSS se usa para aplicar una o más sombras a
+            un elemento</dialog></button>
+
+        <button class="tooltips">transform 2d<dialog class=" "> le permiten mover, rotar, escalar y sesgar elementos.
+            translate()
+            rotate(),scaleX(),scaleY(),scale(),skewX(),skewY(),skew(),matrix()</dialog></button>
+
+        <button class="tooltips">translate()<dialog class=" ">método mueve un elemento desde su posición actual (según
+            los parámetros dados para el eje X y el eje Y).</dialog></button>
+
+        <button class="tooltips">rotate()<dialog class=" ">método gira un elemento en el sentido de las agujas del reloj
+            o en el sentido contrario a las agujas del reloj según un grado determinado.</dialog></button>
+
+        <button class="tooltips">scale()<dialog class=" ">método aumenta o disminuye el tamaño de un elemento (según los
+            parámetros dados para el ancho y alto).</dialog></button>
+
+        <button class="tooltips">scaleX()<dialog class=" ">método aumenta o disminuye el ancho de un elemento.</dialog>
+        </button>
+
+        <button class="tooltips">scaleY()<dialog class=" ">método aumenta o disminuye la altura de un elemento.</dialog>
+        </button>
+
+        <button class="tooltips">matrix()<dialog class=" ">método combina todos los métodos de transformación 2D en uno
+          </dialog></button>
+
+        <button class="tooltips">transform 3d<dialog class=" ">puede utilizar los siguientes métodos
+            rotateX(),rotateY(),rotateZ()</dialog></button>
+
+        <button class="tooltips">transition<dialog class=" "> permiten cambiar los valores de propiedad sin problemas,
+            durante un período determinado. Para crear un efecto de transición, debe especificar dos cosas: la propiedad
+            CSS a la que desea agregar un efecto.la duración del efecto</dialog></button>
+
+        <button class="tooltips">object-position<dialog class=" ">propiedad CSS se usa para especificar cómo se debe
+            colocar un img o un video dentro de su contenedor. pueden ser contein, cover, none, scale-downs</dialog>
+        </button>
+
+        <button class="tooltips">flex<dialog class=" ">crea una caja flexible. sus propiedades son flex-direction
+            flex-wrap,flex-flow,justify-content,align-items,align-content </dialog></button>
+
+        <button class="tooltips">flex-direction<dialog class=" "> propiedad define en qué dirección el contenedor quiere
+            apilar los elementos flexibles. flex-direction: column (valor apila los elementos flexibles verticalmente
+            (de arriba a abajo)). flex-direction: row;apila los elementos flexibles horizontalmente (de izquierda a
+            derecha). ademas estan estas mismas propiedades pero con reverse, voltea la direccion</dialog></button>
+
+        <button class="tooltips">flex-wrap<dialog class=" "> propiedad especifica si los elementos flexibles deben
+            ajustarse o no. para ajustarlos. para ajustarlo se pone: flex-wrap: wrap. para no ajustar: flex-wrap:
+            nowrap. tambien tiene su metodo reverse</dialog></button>
+
+        <button class="tooltips">justify-content<dialog class=" ">propiedad se utiliza para alinear los elementos
+            flexibles sus valores pueden ser: center(centra), flex-start(al comienzo), flex-end(al finalizar),
+            space-around(con espacio antes, entre y después de las líneas),space-between (con espacio entre líneas)
+          </dialog></button>
+
+        <button class="tooltips">align-items<dialog class=" ">propiedad se utiliza para alinear los elementos flexibles
+            sus valores pueden ser: center(centra), flex-start(al comienzo), flex-end(al finalizar), stretch( estira los
+            elementos flexibles para llenar el contenedor), baseline (como se alinean sus líneas base) </dialog>
+          </button>
+
+        <button class="tooltips">align-content<dialog class=" ">propiedad se utiliza para alinear las líneas flexibles
+            sus valores puede ser: space-between (con espacio entre líneas), space-around(con espacio antes, entre y
+            después de las líneas), stretch(estira los elementos flexibles para llenar el contenedor), center(centra),
+            flex-start(al comienzo), flex-end(al finalizar)</dialog></button>
+
+        <button class="tooltips">order<dialog class=" ">propiedad especifica el orden de los elementos flexible
+          </dialog></button>
+
+        <button class="tooltips">flex-grow<dialog class=" ">propiedad especifica cuánto crecerá un elemento flexible en
+            relación con el resto de los elementos flexibles. </dialog></button>
+
+        <button class="tooltips">flex-shrink<dialog class=" ">propiedad especifica cuánto se encogerá un elemento
+            flexible en relación con el resto de los elementos flexibles. </dialog></button>
+
+        <button class="tooltips">grid<dialog class=" ">un sistema de diseño basado en cuadrículas, con filas y columnas,
+            lo que facilita el diseño de páginas web sin tener que usar flotadores y posiciones, algunas propiedades
+            son, column-gap(propiedad establece el espacio entre las columnas), row-gap(propiedad establece el espacio
+            entre las filas) y gap(es una propiedad abreviada para el row-gapy las column-gap) </dialog></button>
+
+        <button class="tooltips">grid-template-columns<dialog class=" ">propiedad define el número de columnas en su
+            diseño de cuadrícula y puede definir el ancho de cada column </dialog></button>
+
+        <button class="tooltips">grid-template-rows<dialog class=" ">propiedad define la altura de cada filapropiedad
+            define la altura de cada fila </dialog></button>
+
+        <button class="tooltips">align-content<dialog class=" ">propiedad se usa para alinear verticalmente toda la
+            cuadrícula dentro del contenedor </dialog></button>
+
+        <button class="tooltips">grid-column<dialog class=" "> define en qué columna(s) colocar un elemento</dialog>
+          </button>
+
+        <button class="tooltips">metodologia BEM<dialog class=" "></dialog></button>
+
+
+      </div>
+    </div>
+
+
+    <div class="gran-contenenedor">
+      <div class="ventana">
+        <h1>javaScript</h1>
+      </div>
+
+      <div class="info">
+        <a class="lista" Target="blank" href="https://developer.mozilla.org/es/">Info sobre JavaScript</a>
+        <button class="tooltips">comentarios<dialog class=" ">Para comentar una linea en js se colocan // un atajo
+            (ctrl+k+c). Para comentar mas de un renglon /* */</dialog></button>
+
+        <button class="tooltips">Palabras reservadas<dialog class=" ">break, case, cath, continue, default, let, delete,
+            do, else, finally, for, function, if, in, instanceor, new, return, swich, this, throw, try, typeof, var,
+            void, while, with, entre otras</dialog></button>
+
+        <button class="tooltips">camelcase<dialog class=" ">En programación es habitual utilizar el estilo camel case
+            para escribir los nombres de variables que concatenan varias palabras. La norma de estilo indica que la
+            primera letra de cada una de las palabras concatenadas debe ser mayúscula, mientras que el resto deben
+            escribirse en minúscula.</dialog></button>
+
+        <button class="tooltips">variables<dialog class=" ">es un espacio reservado en la memoria que puede cambiar de
+            contenido (var, let) e información.Las variables pueden ser: var, let y const. esta ultima es un tipo de
+            variable que su valor no puede cambiar, va aser siempre el mismo.
+            el nombre de las variables no pueden tener espacios en blanco, se va a usar el metodo camelCase o con guion
+            bajo. ejemplo "miPrimerNombre" o "mi_primer_nombre"
+          </dialog></button>
+
+        <button class="tooltips">valor<dialog class=" ">Los valores de una variable pueden ser numericos, string,
+            booleanos u otra variable (es decir el valor que contiene esa variable)</dialog></button>
+
+        <button class="tooltips">consola<dialog class=" ">La consola de JavaScript es una herramienta que se encuentra
+            en la mayoría de los navegadores web y permite a los desarrolladores interactuar con el código JavaScript y
+            depurar su aplicación.</dialog></button>
+
+        <button class="tooltips">Operaciones matematicas<dialog class=" ">sirven para sumar "+", restar "-", multiplicar
+            "*", dividir "/" y hasta para sacar el valor del modulo "%"</dialog></button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+
+        <button class="tooltips">
+          <dialog class=" "></dialog>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="gran-contenenedor">
+      <div class="ventana">
+        <h1>react</h1>
+      </div>
+      <div class="info">...</div>
+    </div>
+
+    <div class="gran-contenenedor">
+      <div class="ventana">
+        <h1>git/gitub</h1>
+      </div>
+      <div class="info">...</div>
+    </div>
+
+
+  </div>
+
+  <footer class="footer">
+    <p class="p-footer">May-simtre</p>
+  </footer>
+  <script src="modal.js"></script>
+</body>
+
 </html>
